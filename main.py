@@ -40,6 +40,11 @@ df = df[df['relative_miner_change_to_spot_vol'].abs() > 1]
 # remove the first row with NaN
 df = df.dropna()
 
+# print date of the highest change
+largest_sell_amnt = df['relative_miner_change_to_spot_vol'].idxmin()
+print(largest_sell_amnt)
+print(df['date'][largest_sell_amnt])
+
 # save to CSV
 df.to_csv("btc_metrics_edited.csv")
 
