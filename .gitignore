@@ -152,7 +152,7 @@ dmypy.json
 # Cython debug symbols
 cython_debug/
 
-# other files
+
 halvings.py
 ltc_halvings.png
 halvings.png
